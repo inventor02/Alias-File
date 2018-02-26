@@ -206,6 +206,7 @@ Runway
 
 .lllu Line up runway $deprwy($dep) via $1
 .bt Via $1, enter backtrack, line up runway $deprwy($dep)
+.btv Via $1, enter backtrack, $deprwy($dep), vacate via $2, taxi $3 via $4
 .rrfd Report ready for departure
 
 .to Runway $deprwy($dep), cleared for takeoff, surface wind $wind($dep)
