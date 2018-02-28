@@ -42,10 +42,14 @@ Clearances
 ========================================================
 
 .sid Cleared to $arr, $sid departure, squawk $squawk
-.sidrw Cleared to $arr, $sid departure, runway $deprwy($dep), squawk $squawk
 .sidi Information $atiscode current, cleared to $arr, $sid departure, squawk $squawk
 .sidq Cleared to $arr, $sid departure, squawk $squawk, QNH $altim($dep)
 .sidiq Information $atiscode current, cleared to $arr, $sid departure, squawk $squawk, QNH $altim($dep)
+.sidrw Cleared to $arr, $sid departure, runway $deprwy($dep), squawk $squawk
+.sidirw Information $atiscode current, cleared to $arr, $sid departure, runway $deprwy($dep), squawk $squawk
+.sidqrw Cleared to $arr, $sid departure, runway $deprwy($dep), squawk $squawk, QNH $altim($dep)
+.sidiqrw Information $atiscode current, cleared to $arr, $sid departure, runway $deprwy($dep), squawk $squawk, QNH $altim($dep)
+
 .rc Correct
 .rcp Correct, report ready for push and start
 .rcd Correct, report ready for departure
@@ -180,7 +184,7 @@ Ground Movement
 .cont Continue taxi $1
 
 .p Stand $1, push and start approved
-.push Stand $1, push and start approved
+.push Push and start approved
 .ps Stand $1, push and start approved, face South
 .pn Stand $1, push and start approved, face North
 .pe Stand $1, push and start approved, face East
