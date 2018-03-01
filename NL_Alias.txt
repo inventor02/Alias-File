@@ -184,11 +184,14 @@ Ground Movement
 .cont Continue taxi $1
 
 .p Stand $1, push and start approved
-.push Push and start approved
 .ps Stand $1, push and start approved, face South
 .pn Stand $1, push and start approved, face North
 .pe Stand $1, push and start approved, face East
 .pw Stand $1, push and start approved, face West
+.pushs Push and start approved, face South
+.pushn Push and start approved, face North
+.pushe Push and start approved, face East
+.pushw Push and start approved, face West
 
 .vr Vacate right
 .vl Vacate left
