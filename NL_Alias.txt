@@ -1,7 +1,7 @@
 ========================================================
 Alias:    	NL Custom
 Created:     	2018-02-03
-Last Updated:	2018-03-01
+Last Updated:	2018-03-02
 ========================================================
 
 ========================================================
@@ -229,6 +229,10 @@ Runway
 .tg Cleared touch and go runway $arrrwy($arr), surface wind $wind($arr)
 .caclc Continue approach, cancel landing clearance, acknowledge
 .wind Surface Wind $wind($1)
+.rfin Report final $arrrwy($arr), you are number 1
+.rfin2 Report final $arrrwy($arr), you are number $1, traffic is $2, caution wake turbulence, recommended distance is $3
+.rbase Report $1 base $arrrwy($arr)
+.traf Traffic information is $1
 
 .ga Go around, I say again, go around, acknowledge
 
