@@ -14,7 +14,7 @@ General
 .kkcharts View Gatwick charts here: https://tinyurl.com/kkcharts
 
 .inv Your flightplan is invalid, please refile.
-.route Your routing is invalid, please refile. Recommended sites are https://edi-gla.co.uk/ or https://www.simbrief.com/home/ 
+.route Your routing is invalid, please refile. Recommended sites are https://www.simbrief.com/home/ or https://edi-gla.co.uk/
 .srd Check the NATS Standard Route Document here: https://tinyurl.com/strodoc
 .v Can you receive voice?
 .std Check Standard Pressure is set (1013 hPa)
@@ -218,7 +218,8 @@ Runway
 .rrfd Report ready for departure
 
 .to Runway $deprwy($dep), cleared for takeoff, surface wind $wind($dep)
-.tov From $1, Runway $deprwy($dep), cleared for takeoff, surface wind $wind($dep)
+.tov Via $1, Runway $deprwy($dep), cleared for takeoff, surface wind $wind($dep)
+.lltov From $1, Runway $deprwy($dep), cleared for takeoff, surface wind $wind($dep)
 
 .cto Hold position, cancel take-off, I say again, cancel take-off acknowledge
 .stop Stop immediately, I say again, $callsign, stop immediately acknowledge
