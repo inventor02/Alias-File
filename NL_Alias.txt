@@ -1,7 +1,11 @@
 ========================================================
 Alias:    	NL Custom
 Created:     	2018-02-03
+<<<<<<< HEAD
 Last Updated:	2018-03-02
+=======
+Last Updated:	2018-03-03
+>>>>>>> fb7ced48adf6b0368883253ed5cfcbac62047394
 ========================================================
 
 ========================================================
@@ -32,6 +36,7 @@ Manchester
 
 .wcc Welcome to Manchester
 .cccharts View Manchester charts here: https://tinyurl.com/egcccharts
+.lon The maximum FL to the London Area is FL190, can you accept FL190?
 .listo The LISTO departure is invalid for your aircraft type, can you accept a SANBA departure instead?
 .ccts Hold position, after departure $deprwy($dep) it's left hand visual circuits, not above height 1500ft VFR, QFE $1, squawk $squawk
 .ccts5 Hold position, after departure $deprwy($dep) it's right hand visual circuits, not above height 1500ft VFR, QFE $1, squawk $squawk
