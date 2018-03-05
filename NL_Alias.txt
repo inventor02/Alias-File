@@ -10,7 +10,7 @@ General
 
 .pdcf .msg $aircraft PRE-DEPARTURE CLEARANCE: $aircraft clrd to $arr off $deprwy via $sid SID. Squawk $squawk, ATIS $atiscode. NO READBACK REQUIRED. When fully ready to push and start contact $radioname($1) on frequency $freq($1) with stand number, aircraft type and QNH $altim($dep)
 .pdc .msg $aircraft PRE-DEPARTURE CLEARANCE: $aircraft clrd to $arr off $deprwy via $sid SID. Squawk $squawk, ATIS $atiscode. NO READBACK REQUIRED. When fully ready to push and start contact $callsign on frequency $com with stand number, aircraft type and QNH $altim($dep)
-.cpdc .pdc .msg $aircraft $dep PDC - $ftime(minutes) - INFORMATION $atiscode($dep). $aircraft CLRD TO $arr OFF $deprwy($dep) VIA $sid SQUAWK $squawk. QNH $altim($dep)HPA. NEXT FREQ $com. REPORT ACFT TYPE AND STAND NUMBER ON $com WHEN FULLY READY. PDC READBACK NOT RQRD.
+.cpdc .pdc .msg $aircraft $dep PDC - $ftime(minutes) - INFORMATION $atiscode($dep). $aircraft CLRD TO $arr OFF $deprwy($dep) VIA $sid SQUAWK $squawk. QNH $altim($dep) hPa. NEXT FREQ $com. REPORT ACFT TYPE AND STAND NUMBER ON $com WHEN FULLY READY. PDC READBACK NOT RQRD.
 
 .kkcharts View Gatwick charts here: https://tinyurl.com/kkcharts
 
