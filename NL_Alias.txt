@@ -1,7 +1,7 @@
 ========================================================
 Alias:    	NL Custom
 Created:     	2018-02-03
-Last Updated:	2018-03-05
+Last Updated:	2018-03-11
 ========================================================
 
 ========================================================
@@ -10,12 +10,22 @@ General
 
 .pdcf .msg $aircraft PRE-DEPARTURE CLEARANCE: $aircraft clrd to $arr off $deprwy via $sid SID. Squawk $squawk, ATIS $atiscode. NO READBACK REQUIRED. When fully ready to push and start contact $radioname($1) on frequency $freq($1) with stand number, aircraft type and QNH $altim($dep)
 .pdc .msg $aircraft PRE-DEPARTURE CLEARANCE: $aircraft clrd to $arr off $deprwy via $sid SID. Squawk $squawk, ATIS $atiscode. NO READBACK REQUIRED. When fully ready to push and start contact $callsign on frequency $com with stand number, aircraft type and QNH $altim($dep)
-.cpdc .msg $aircraft $dep PDC - $ftime(minutes) - INFORMATION $atiscode($dep). $aircraft CLRD TO $arr OFF $deprwy($dep) VIA $sid SQUAWK $squawk. QNH $altim($dep) hPa. NEXT FREQ $com. REPORT ACFT TYPE AND STAND NUMBER ON $com WHEN FULLY READY. PDC READBACK NOT RQRD.
+.llpdc .msg $aircraft $dep PDC - $ftime(minutes) - INFORMATION $atiscode($dep). $aircraft CLRD TO $arr OFF $deprwy($dep) VIA $sid SQUAWK $squawk. QNH $altim($dep) hPa. NEXT FREQ $com. REPORT ACFT TYPE AND STAND NUMBER ON $com WHEN FULLY READY. PDC READBACK NOT RQRD.
+
+.s Standby
+.r Roger
+.a Affirm
+.n Negative
+.d Disregard
+.pm Pass your message
+.chp .msg $aircraft Hold Position. Contact me on $freq
 
 .kkcharts View Gatwick charts here: https://tinyurl.com/kkcharts
 
 .inv Your flightplan is invalid, please refile.
-.route Your routing is invalid, please refile. Recommended sites are https://www.simbrief.com/home/ or https://edi-gla.co.uk/
+.invr Your routing is invalid, please refile. Recommended sites are https://www.simbrief.com/home/ or https://edi-gla.co.uk/
+.invfl Your flight level needs to be $1, can you accept either FL$2 or FL$3?
+
 .srd Check the NATS Standard Route Document here: https://tinyurl.com/strodoc
 .v Can you receive voice?
 .std Check Standard Pressure is set (1013 hPa)
@@ -33,8 +43,13 @@ Manchester
 
 .wcc Welcome to Manchester
 .cccharts View Manchester charts here: https://tinyurl.com/egcccharts
+.nolisto LISTO is ONLY available to JET Aircraft up to 35 tonnes and PROP Aircraft. Please refile for a SANBA Departure
+.nosanba SANBA is not available from Runway 05L/R. Please refile for a LISTO Departure
+.nodesig DESIG is not available from Runway 23L/R. Please refile for a SONEX Departure
+.nokuxem KUXEM is not available from 05L/R. Please refile for an ASMIM Departure
+.noasmim ASMIM is not available from 23L/R. Please refile for a $2 Departure
+.noeklad EKLAD is not available from 05L/R. Please refile for a ASMIM Departure
 .lon The maximum FL to the London Area is FL190, can you accept FL190?
-.listo The LISTO departure is invalid for your aircraft type, can you accept a SANBA departure instead?
 .ccts Hold position, after departure $deprwy($dep) it's left hand visual circuits, not above height 1500ft VFR, QFE $1, squawk $squawk
 .ccts5 Hold position, after departure $deprwy($dep) it's right hand visual circuits, not above height 1500ft VFR, QFE $1, squawk $squawk
 .macc Hold position, after departure $deprwy($dep), cleared to leave the Manchester control zone via the MACC 1 VISUAL not above 1500ft VFR, QNH $altim($dep), squawk $squawk
@@ -67,6 +82,7 @@ Clearances
 .sqwk Squawk $squawk
 .squawk Squawk $squawk
 .sc Squawk mode Charlie
+.smc Squawk mode Charlie
 .si Squawk Ident
 .sirpa Squawk Ident, report your passing altitude
 .sira Squawk Ident, report your passing altitude
@@ -164,7 +180,7 @@ Vertical
 Speed Control
 ========================================================
 
-.s Speed $1 knots
+.sp Speed $1 knots
 .m Mach $1
 .rias Report your indicated airspeed
 
