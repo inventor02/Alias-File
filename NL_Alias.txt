@@ -127,7 +127,7 @@ Handoffs
 .uni No Further ATC available. Monitor Unicom 122.800
 .oma You are currently outside my airspace. Monitor Unicom 122.800
 .nso $1 is offline - monitor unicom 122.800
-.fin You are outside of my airspace, contact me when on final for runway $arrrwy($arr)
+.fin You are outside of my airspace, monitor unicom and contact me when on final for runway $arrrwy($arr)
 
 ========================================================
 Lateral
